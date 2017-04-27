@@ -2,13 +2,17 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; transition: all .5s; font-family: "nanumgothic"; color: #333; }
 *:after { content: ""; display: block; clear: both; }
 
+/*font*/
 @font-face {
 	font-family: "nanumgothic";
 	src: "/font/NanumGothic-Regular.woff";
 }
+
+/*tag*/
 a { text-decoration: none; color: #3498db; }
 li { list-style: none; }
 span { display: inline-block; }
+.ABOUT,.PORTFOLIO,.CONTACT,.COMMUNITY { display: none; }
 
 /*html,body*/
 html,body { width: 100%; height: 100%; }
@@ -22,44 +26,43 @@ html,body { width: 100%; height: 100%; }
 .tit > h1 { font-size: 3em; text-align: center; }
 .tit > p { font-size: 1em; text-align: center; padding-top: 20px; }
 
+/*header menu*/
 .nav { width: 100%; height: 80px; background: #2980b9; padding-left: 80px; margin-top: 155px; }
 .nav > ul li { float: left; width: 150px; height: 80px; font-weight: bold; font-size: 1.2em; text-align: center; padding-top: 25px; cursor: pointer; }
 .nav > ul li:hover { background: rgb(255,255,255); }
+
 /*section*/
 section { width: 100%; }
 .sec_tit { width: 100%; padding-top: 100px; }
 .sec_tit > h2 { text-align: center; font-size: 2.2em; }
 .underline { width: 60px; height: 4px; background: #3498db; margin: 0 auto; margin-top: 15px; }
-
 section.on { display: block; }
 
-/*section1*/
-.ABOUT { display: none; }
+/*about*/
 .profil { width: 1000px; height: 500px; border-radius: 4px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; }
 .profil > p { padding: 60px 0 0 50px; font-size: 1.1em;  }
 .profil > p > span { font-weight: bold; color: rgba(0,0,0, .7); }
 
-/*section2*/
-.PORTFOLIO { display: none; }
+/*portfolio*/
 .PORTFOLIO > ul { width: 1200px; margin: 0 auto; margin-top: 50px; margin-bottom: 50px; }
 .PORTFOLIO > ul li { float: left; overflow: hidden; position: relative; margin: 20px 1.6%; width: 30%; box-shadow: 0 0 20px -4px; cursor: pointer; border-radius: 4px; }
 .PORTFOLIO > ul li img { width: 100%; }
 
-
 .site:hover .bg { opacity: 1; }
-
 .bg { position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,.7); opacity: 0; border-radius: 3px; }
 .bg > p { font-size: 1.2em; color: #fff; text-align: center; line-height: 300px; }
-
 .text { padding: 10px; }
 .text h3 { line-height: 40px; }
 .text p { color: #999; font-size: .9em; line-height: 40px; }
 
-/*section3*/
-.CONTACT { display: none; }
+/*contact*/
 .cont { width: 700px; height: 300px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; border-radius: 4px; }
 .cont > p { padding: 55px 0 0 50px; font-size: 1.1em; }
 .cont > p > span { font-weight: bold; color: rgba(0,0,0, .7); }
+
+/*community*/
+.board { width: 1000px; margin: 0 auto; margin-top: 50px; }
+
 /*footer*/
 #footer { width: 100%; height: 70px; background: #ddd; }
 #footer p { text-align: center; padding-top: 20px; }

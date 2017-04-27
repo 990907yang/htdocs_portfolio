@@ -10,19 +10,22 @@
 		<!-- header -->
 		<header id="header">
 			<div class="tit">
+			<!-- logo -->
 				<h1 class="logo">Yang Gyoung Sik</h1>
 				<p>Web developer &#38; designer</p>
 			</div>
+			<!-- menu -->
 			<div class="nav">
 				<ul>
 					<li class="menu">ABOUT</li>
 					<li class="menu on">PORTFOLIO</li>
 					<li class="menu">CONTACT</li>
+					<li class="menu">COMMUNITY</li>
 				</ul>
 			</div>
 		</header>
 		<!-- section -->
-		
+		<!-- about -->
 		<section class="ABOUT">
 			<div class="sec_tit">
 				<h2>ABOUT</h2>
@@ -36,7 +39,8 @@
 				<p><span>API</span> : 서울시 지하철 시간 API, 다음지도 API, 구글지도 API</p>
 			</div>
 		</section>
-		<section class="PORTFOLIO on">
+		<!-- portfolio -->
+		<section class="PORTFOLIO">
 			<div class="sec_tit">
 				<h2>PORTFOLIO</h2>
 				<div class="underline"></div>
@@ -100,6 +104,7 @@
 		        </li>
 			</ul>
 		</section>
+		<!-- contact -->
 		<section class="CONTACT">
 			<div class="sec_tit">
 				<h2>CONTACT</h2>
@@ -109,6 +114,35 @@
 				<p><span>Email</span> : yam0907@naver.com, yam09071004@gmail.com</p>
 				<p><span>Address</span> : 서울시 강북구 송천동 삼양로24길 19</p>
 				<p><span>Phone</span> : 010-7371-7919</p>
+			</div>
+		</section>
+
+		<section class="COMMUNITY on">
+			<div class="sec_tit">
+				<h2>COMMUNITY</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="board">
+				<div class="table">
+					<div class="tb_head">
+						<ul>
+							<li>번호</li>
+							<li>제목</li>
+							<li>글쓴이</li>
+							<li>날짜</li>
+							<li>조회수</li>
+						</ul>
+					</div>
+					<div class="tb_body">
+						<ul class="list">
+							<li class="number"></li>
+							<li class="title"></li>
+							<li class="writer"></li>
+							<li class="date"></li>
+							<li class="count"></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- footer -->
