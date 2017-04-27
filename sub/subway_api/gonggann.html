@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.0.0.js"></script>
+ 
+   <script>
+        
+    $(document).ready(function(){
+       $("#new_allay").click(function(){
+           $('#map_show').empty();
+           $('#bus_show').empty();
+           var code = $('#bus_num').val();
+           var url = "busss.php";
+           var time="정보없음";
+           var time2="정보없음";
+      $.ajax({
+	
+        url:url,
+          datatype:'xml',
+          type:'get',
+          data:$('form').serialize(),
+          success:function(response){
+              console.log(response);
+             
+             var my_adirect = $(response).find('statnNm:first').text();
+	
+			    $("#map_show").append("<"+my_adirect+"역></br>");
+                $("#bus_show").append("<"+my_adirect+"역의 첫차막차 시간></br>");
+			
+          $(response).find('row').each(function(){
+              var hour = $(this).find('weekendTranHour').text();
+              
+              if( $(this).find('lastcarDiv').text() == 1){
+                    time = hour;
+              }else{
+                   time2 = hour;
+              }
+              
+              var name = $(this).find('statnNm').text();
+              var subwayename = $(this).find('subwayename').text();
+			
+//			  
+//              $("#map_show").append(name+"역의 첫차막차 운행시간<br>");
+                $("#bus_show").append(subwayename+"행 열차의 막차 시간은"+time2+ "<br><br>" );
+                $("#bus_show").append(subwayename+"행 열차의 첫차 시간은"+time+ "<br>" );
+          });
+            
+          }
+          
+          
+      });
+       });
+    });
+    </script>
+    
+    <link rel="stylesheet" href="./css/gongan.css">
+</head>
+<body>
+  <div id="warp">
+  
+  
+   <!--input type="text" id="bus_num">
+    <input type="button" id="new_allay">-->
+    <div id="header">지하철 역정보 시스템</div>
+    <div id="codes">
+       <form>
+        <input type="text" id="bus_num" name="code" placeholder="'역'을 제외한 지하철역명을 입력하세요">
+    
+        <input type="button" id="new_allay" value="조회" >
+        </form>
+    </div>
+   
+    <div id="contents">
+        <div id="bus">
+          <div id="bus_show"></div>
+          </div> 
+      
+    </div>
+    </div>
+</body>
+</html>

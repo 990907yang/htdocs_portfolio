@@ -1,0 +1,186 @@
+/*font*/
+@import url(../fonts/NanumBarunGothic.woff);
+@font-face{
+	font-family: 'nanumbarungothic';
+}
+/*all*/
+* { margin: 0; padding: 0; box-sizing: border-box; color: #333; font-family:"nanumbarungothic"; transition: all .5s; }
+*:after { content: ""; display: block; clear: both; }
+
+a { text-decoration: none; }
+li { list-style: none; }
+body,html { width:100%; position: relative; }
+button { border: 0; cursor: pointer; outline: none; }
+
+/*wrap*/
+#wrap { max-width: 100%; margin: 0 auto; }
+
+/*header*/
+#header { width: 100%; height: 100px; position: fixed; background: #fff; z-index: 99; }
+	#header .logo { width: 178px; height: 62px; margin: auto; margin-top: 10px;  }
+	#header .nav { float: right; width: 150px; height: 20px; margin-right: 20px; position: absolute; top: 0px; right: 0; }
+	#header .nav li { float: left; padding: 0 10px; cursor: pointer; }
+	#header .nav li:nth-child(1) { border-right: 1px solid #999; }
+	#header .nav li:hover { color: #3cb54b; }
+
+/*section*/
+#section { position: relative; max-width: 100%; }
+
+/*section nav*/
+.main_nav { position: fixed; right: 30px; top: 45%; z-index: 99; }
+.main_nav li { width: 15px; height: 15px; margin-bottom: 15px; border-radius: 50%; background: #999; cursor: pointer; }
+.main_nav li:hover { background: #3cb54b; }
+
+/*section_one*/
+.one { width: 100%; height: 820px; position: absolute; margin-top: 100px; background: url(../images/taxnow_bg1.jpg); background-position: bottom center; background-size: cover; background-repeat: no-repeat; z-index: 98; }
+	.one > p { text-align: center; font-size: 42px; padding-top: 80px; }
+	.one > p > span { display: inline-block; background: #3cb54b; color: #fff; }
+
+/*section two*/
+.two { width: 100%; height: 820px; position: absolute; top: 920px; }
+	.two_tit { font-size: 42px; text-align: center; padding-top: 50px; font-weight: normal; }
+	.two_tit > span { font-size: 60px; display: inline-block; color: #36ae4a; }
+
+	.menual { width: 600px; height: 700px; margin: 0 auto; padding-top: 50px; }
+	.menual li { float: left; width: 300px; height: 300px; text-align: center; }
+	.menual li h3 { font-size: 24px; margin-bottom: 10px; color: #0c7240; }
+	.menual li img { width: 167px; height: 165px; margin-bottom: 20px; }
+	.menual li img:hover { transform: rotateY(30deg); }
+
+/*section two*/
+.three { width: 100%; height: 840px; position: absolute; top: 1740px; }
+	.th { width: 55%; margin: 0 auto; margin-top: 100px; }
+	.th_left { width: 282px; float: left; }
+	.th_left > img:hover { transform: rotate(10deg); }
+	.th_right { float: right; margin-top: 160px; }
+	.th_right > h3 { font-size: 35px; color: #05713d; margin-bottom: 20px; }
+	.under { width: 30px; height: 3px; background: #0c6f43; }
+	.th_right > h4 { font-size: 30px; margin-top: 20px; margin-bottom: 20px; }
+
+/*section two*/
+.four { width: 100%; height: 820px; position: absolute; top: 2580px; }
+	.fo { width: 70%; margin: 0 auto; margin-top: 100px; }
+	.fo_right { width: 642px; display: inline-block; }
+	.fo_right img:hover { transform: rotate(5deg); }
+
+	.fo_left { float: left; margin-top: 160px;  margin-right: 100px;}
+	.fo_left > h3 { font-size: 35px; color: #05713d; margin-bottom: 20px; }
+	.fo_left > h4 { font-size: 30px; margin-top: 20px; margin-bottom: 20px; }
+
+/*section two*/
+.five { width: 100%; height: 820px; position: absolute; top: 3400px; }
+	.fi { width: 70%; margin: 0 auto; margin-top: 50px; }
+	.fi_left { width: 540px; float: left; }
+	.fi_left > img:hover { transform: rotate(-5deg); }
+	.fi_right { float: right; margin-top: 160px; }
+	.fi_right > h3 { font-size: 35px; color: #05713d; margin-bottom: 20px; }
+	.fi_right > h4 { font-size: 30px; margin-top: 20px; margin-bottom: 20px; }
+
+/*section two*/
+.six { width: 100%; height: 800px; position: absolute; top: 4220px; background: url(../images/taxnow_bg2.jpg)center; background-size: cover; background-position: bottom center; background-repeat: no-repeat; }
+	.circle { width: 650px; height: 650px; border-radius: 50%; background: rgba(46, 204, 113,.7); margin: 0 auto; margin-top: 90px; text-align: center; box-shadow: 0 0 30px -2px; }
+	.cir_text { padding-top: 220px; }
+	.cir_text > h3 { font-size: 35px; color: #fff; }
+	.cir_text > h4 { font-size: 27px; color: #fff; }
+	.cir_text > p { font-size: 20px; color: #fff; padding: 35px; }
+	.under2 { width: 30px; height: 3px; background: #fff; margin: 0 auto; margin-top: 25px; margin-bottom: 25px; }
+
+/*section two*/
+.seven { width: 100%; height: 800px;position: absolute; top: 5020px; background: #116d3c; }
+	.seven button { width: 170px; height: 40px; font-size: 17px; font-weight: bold; background: #3cb54b; color: #fff; margin-top: 20px; }
+	.seven button:hover { background: #fff; color: #116d3c; }
+	.seven h3 { font-size: 25px; color: #fff; font-weight: normal; text-align: center; margin-top: 150px; }
+	.se { width: 35%; margin: 0 auto; margin-top: 150px; }
+	.se_left { width: 270px; height: 290px; border: 10px solid #fff; float: left; text-align: center; }
+		.se_left > h4 { font-size: 25px; color: #fff; padding-top: 30px; }
+		.se_left > h5 { font-size: 25px; color: #fff; padding-top: 40px; display: inline-block; }
+		.se_left > h5 > p { font-size: 40px; margin-left: 2px; color: #fff; display: inline-block; }
+		.se_left h5 > span { color: #999; padding: 10px; text-decoration:line-through; font-size: 40px; display: inline-block; }
+		.se_left p { color: #fff; margin-left: 70px; margin-top: -10px; }
+
+	.se_right { width: 270px; height: 290px; border: 10px solid #fff; float: right; text-align: center; }
+		.se_right > h4 { font-size: 25px; color: #fff; padding-top: 30px; }
+		.se_right > p { font-size: 15px; color: #2e9b62; }
+		.se_right > h5 { font-size: 25px; color: #fff; padding-top: 40px; }
+		.se_right > h5 > span { font-size: 45px; color: #fff; }
+
+/*footer*/
+#footer { width: 100%; height: 62px; background: #393939; position: absolute; top: 5820px; }
+#footer > p { color: #fff; text-align: center; line-height: 60px; }
+
+@media (max-width: 780px){
+	.th { width: 95%; }
+
+	.fo { width: 80%; }
+	.fo_left { margin: 0; margin-bottom: 50px; }
+	
+	.fi { width: 500px; }
+	.fi_left img { width: 490px; height: 400px; }
+	.fi_right { margin-top: 50px; margin-right: 30px; }
+
+	.seven h3 { margin-top: 150px; }
+	.se { margin-top: 130px; width: 80%; }
+}
+
+@media (max-width: 360px){
+	.logo { float: left; }
+	.main_nav { margin-top: 50px; }
+	.nav { margin-top: 50px; }
+	
+	.one > p { font-size: 35px; }
+
+	.two_tit { font-size: 30px; padding-top: 0; }
+	.two_tit > span { font-size: 40px; }
+	.menual { float: none; width: 360px; padding-top: 10px; }
+	.menual li { width: 340px; height: 200px; }
+	.menual li h3 { font-size: 16px; }
+	.menual li p { font-size: 12px; }
+	.menual ul li > img { width: 100px; height: 100px; margin-bottom: 0; }
+
+	.th { margin-top: 20px; }
+	.th_left { width: 207px; height: 400px; float: none; margin: 0 auto; }
+	.th_left img { width: 207px; height: 400px; }
+	.th_right { margin-top: 30px; }
+	.th_right h3 { font-size: 27px; }
+	.th_right h4 { font-size: 22px; }
+	.th_right p { font-size: 13px; }
+
+	.fo { width: 100%; margin-top: 10px; }
+	.fo_left { margin-left: 10px; }
+	.fo_left h3 { font-size: 27px; }
+	.fo_left h4 { font-size: 22px; }
+	.fo_left p { font-size: 13px; }
+	.fo_right img { width: 360px; }
+
+	.fi { width: 100%; margin-top: 10px; }
+	.fi_left { width: 280px; margin-left: 40px; }
+	.fi_left img { width: 280px; height: 290px; }
+	.fi_right { margin-left: 30px; }
+	.fi_right h3 { font-size: 25px; }
+	.fi_right h4 { font-size: 20px; }
+	.fi_right p { font-size: 15px; }
+	
+	.circle { width: 360px; height: 360px; }
+	.cir_text { padding-top: 100px; }
+	.cir_text h3 { font-size: 20px; }
+	.cir_text h4 { font-size: 18px; }
+	.cir_text p { font-size: 15px; }
+
+	.seven h3 { font-size: 20px; margin-top: 70px; }
+	.se { width: 200px; margin: 0 auto; margin-top: 100px; }
+
+	.se_left { width: 200px; height: 220px; margin-bottom: 50px; }
+		.se_left > h4 { font-size: 20px; }
+		.se_left > h5 { font-size: 20px; padding-top: 20px; }
+		.se_left > h5 > p { font-size: 30px; }
+		.se_left h5 > span { padding: 5px; font-size: 30px; }
+		.se_left p { font-size: 12px; margin-left: 70px; margin-top: -10px; }
+
+	.se_right { width: 200px; height: 220px; }
+		.se_right > h4 { font-size: 20px; }
+		.se_right > h5 { font-size: 20px; padding-top: 20px; }
+		.se_right h5 > span { font-size: 30px; }
+		.se_right p { font-size: 12px; margin: 0; }
+
+	#footer { top: 5820px; }
+}

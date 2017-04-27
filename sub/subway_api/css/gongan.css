@@ -1,0 +1,106 @@
+*{margin:0 ;padding: 0;}
+
+
+
+#new_allay{
+    width: 80px;
+    height: 20px;
+    position: relative;
+    margin-top: 10px;
+
+
+}
+#bus_num{
+    
+    font-size: 15px;
+    height: 25px;
+    width: 360px;
+ 
+   
+    
+}
+form{
+    height: 25px;
+
+}
+#warp{
+    width: 89%;
+    height:800px;
+    border: 3px double black;
+     border-radius: 20px;
+   margin: 0 auto;
+  background:  #E3F6CE;
+    
+    
+}
+#header{
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 20px; border-top-left-radius: 20px;
+  line-height: 70px;
+	font-size: 30px;
+	text-align: center;
+    background: #BFFF00;
+    
+    
+}
+#codes{
+    height: 50px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+#contents{
+    height: 680px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    float: left;
+    
+}
+#map{
+    width: 20%;
+    height: 600px;
+   float: left;
+   margin-left: 2.5%;
+    background:#CEF6EC ;
+}
+#map_show{
+    width: 90%;
+	overflow: scroll;
+	margin: 0 auto;
+	margin-top: 8px;
+	background: white;
+	border: 3px solid grey;
+    height: 580px;
+	
+}
+#bus{
+    width: 50%;
+    margin-left: 340px;
+    height: 600px;
+    background: #82FA58;
+     float: left;
+}
+#bus_map{
+	width:50%;
+	  height: 580px;
+	float: left;
+	margin-left: 10px; 
+	margin-top: 8px; 
+	background: white;
+	
+}
+
+#bus_show{
+	width: 90%;
+	overflow: scroll;
+	margin-left: 30px;
+	margin-top: 8px;
+	background: white;
+	border: 3px solid grey;
+    height: 580px;
+}
