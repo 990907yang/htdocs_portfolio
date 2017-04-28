@@ -135,14 +135,30 @@
 					</div>
 					<div class="tb_body">
 						<ul class="list">
-							<li class="number"></li>
-							<li class="title"></li>
-							<li class="writer"></li>
-							<li class="date"></li>
-							<li class="count"></li>
+							<li class="number">1</li>
+							<li class="title"><a href="">안녕하셍세요</a></li>
+							<li class="writer">관리자</li>
+							<li class="date">2017-04-28</li>
+							<li class="count">392</li>
+						</ul>
+						<ul class="list">
+							<li class="number">2</li>
+							<li class="title"><a href="">안녕하셍세요</a></li>
+							<li class="writer">관리자</li>
+							<li class="date">2017-04-28</li>
+							<li class="count">392</li>
+						</ul>
+						<ul class="list">
+							<li class="number">3</li>
+							<li class="title"><a href="">안녕하셍세요</a></li>
+							<li class="writer">관리자</li>
+							<li class="date">2017-04-28</li>
+							<li class="count">392</li>
 						</ul>
 					</div>
 				</div>
+
+				<a href="write.php">글쓰기</a>
 			</div>
 		</section>
 		<!-- footer -->
