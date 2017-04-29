@@ -6,3 +6,6 @@ $(".menu").click(function(){
 	$(this).addClass("on");
 	$("."+t).addClass("on");
 });
+$(".wr_btn").click(function(){
+	$("#wr").click();
+});

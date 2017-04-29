@@ -1,3 +1,10 @@
+<?php 
+	include "./src/community/db.php";
+	$sql = "select * from community order by idx desc";
+	$se = $pdo->prepare($sql);
+	$se->execute();
+	$result = $se->fetchAll();
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +28,7 @@
 					<li class="menu on">PORTFOLIO</li>
 					<li class="menu">CONTACT</li>
 					<li class="menu">COMMUNITY</li>
+					<li class="menu" id="wr">WRITE</li>
 				</ul>
 			</div>
 		</header>
@@ -134,31 +142,37 @@
 						</ul>
 					</div>
 					<div class="tb_body">
+					<?php
+					foreach($result as $ro){
+					 ?>
 						<ul class="list">
-							<li class="number">1</li>
-							<li class="title"><a href="">안녕하셍세요</a></li>
-							<li class="writer">관리자</li>
-							<li class="date">2017-04-28</li>
-							<li class="count">392</li>
+							<li class="number"><?=$ro['idx']?></li>
+							<li class="title"><a href="./src/community/view/view.php?idx=<?=$ro['idx']?>"><?=$ro['title']?></a></li>
+							<li class="writer"><?=$ro['writer']?></li>
+							<li class="date"><?=$ro['date']?></li>
+							<li class="count"><?=$ro['count']?></li>
 						</ul>
-						<ul class="list">
-							<li class="number">2</li>
-							<li class="title"><a href="">안녕하셍세요</a></li>
-							<li class="writer">관리자</li>
-							<li class="date">2017-04-28</li>
-							<li class="count">392</li>
-						</ul>
-						<ul class="list">
-							<li class="number">3</li>
-							<li class="title"><a href="">안녕하셍세요</a></li>
-							<li class="writer">관리자</li>
-							<li class="date">2017-04-28</li>
-							<li class="count">392</li>
-						</ul>
+					<?php
+					}
+					 ?>
 					</div>
 				</div>
-
-				<a href="write.php">글쓰기</a>
+				<button class="wr_btn">글쓰기</button>
+			</div>
+		</section>
+		<section class="WRITE">
+			<div class="sec_tit">
+				<h2>글쓰기</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="writing">
+				<form action="./src/community/function/write.php" method="post">
+					<input type="text" name="title" placeholder="제목" required>
+					<input type="text" name="writer" placeholder="작성자" required>
+					<textarea type="textarea" class="textaa" name="text" placeholder="내용을 입력하세요." required></textarea>
+					<button class="wr_btn">글쓰기</button>
+					<a href="index.php" class="wr_btn">취소</a>
+				</form>
 			</div>
 		</section>
 		<!-- footer -->
