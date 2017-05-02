@@ -16,10 +16,12 @@
 	<div id="wrap">
 		<!-- header -->
 		<header id="header">
-			<div class="tit">
-			<!-- logo -->
-				<h1 class="logo">Yang Gyoung Sik</h1>
-				<p>Web developer &#38; designer</p>
+			<div class="headbar">
+				<div class="tit">
+				<!-- logo -->
+					<h1 class="logo">Yang Gyoung Sik</h1>
+					<p>Web developer &#38; designer</p>
+				</div>
 			</div>
 			<!-- menu -->
 			<div class="nav">
@@ -48,7 +50,7 @@
 			</div>
 		</section>
 		<!-- portfolio -->
-		<section class="PORTFOLIO">
+		<section class="PORTFOLIO on">
 			<div class="sec_tit">
 				<h2>PORTFOLIO</h2>
 				<div class="underline"></div>
@@ -125,7 +127,7 @@
 			</div>
 		</section>
 
-		<section class="COMMUNITY on">
+		<section class="COMMUNITY">
 			<div class="sec_tit">
 				<h2>COMMUNITY</h2>
 				<div class="underline"></div>

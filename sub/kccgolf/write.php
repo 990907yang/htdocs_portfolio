@@ -19,7 +19,7 @@
 					<p class="pg_nav">	
 						<a href="#">홈</a>
 						<span>&gt;</span>
-						<a href="#">커뮤니티</a>
+						<a href="#">커뮤니티</a>						
 						<span>&gt;</span>
 						<strong>글쓰기</strong>
 					</p>

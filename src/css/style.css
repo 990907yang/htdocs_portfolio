@@ -22,13 +22,15 @@ html,body { width: 100%; height: 100%; }
 #wrap { width: 100%; margin: 0 auto; background: #eeeeee; }
 
 /*header*/
-#header { width: 100%; height: 335px; background: #3498db; }
-.tit { width: 570px; height: 80px; color: #fff; padding-top: 100px; }
+#header {  }
+
+.headbar { width: 100%; height: 270px; background: #3498db; }
+.tit { width: 590px; float: left; margin-top: 100px; }
 .tit > h1 { font-size: 3em; text-align: center; }
 .tit > p { font-size: 1em; text-align: center; padding-top: 20px; }
 
 /*header menu*/
-.nav { width: 100%; height: 80px; background: #2980b9; padding-left: 80px; margin-top: 155px; }
+.nav { width: 100%; height: 80px; background: #2980b9; padding-left: 80px; }
 .nav > ul li { float: left; width: 150px; height: 80px; font-weight: bold; font-size: 1.2em; text-align: center; padding-top: 25px; cursor: pointer; }
 .nav > ul li:hover { background: rgb(255,255,255); }
 .nav > ul li:nth-child(5) { display: none; }
@@ -41,13 +43,13 @@ section { width: 100%; }
 section.on { display: block; }
 
 /*about*/
-.profil { width: 1000px; height: 500px; border-radius: 4px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; }
+.profil { width: 1000px; height: 500px; border-radius: 4px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; box-shadow: 1px 2px 5px 0 rgba(0,0,0,.2); }
 .profil > p { padding: 60px 0 0 50px; font-size: 1.1em;  }
 .profil > p > span { font-weight: bold; color: rgba(0,0,0, .7); }
 
 /*portfolio*/
 .PORTFOLIO > ul { width: 1200px; margin: 0 auto; margin-top: 50px; margin-bottom: 50px; }
-.PORTFOLIO > ul li { float: left; overflow: hidden; position: relative; margin: 20px 1.6%; width: 30%; box-shadow: 0 0 20px -4px; cursor: pointer; border-radius: 4px; }
+.PORTFOLIO > ul li { float: left; overflow: hidden; position: relative; margin: 20px 1.6%; width: 30%; box-shadow: 1px 2px 5px 0 rgba(0,0,0,.2); cursor: pointer; border-radius: 4px; }
 .PORTFOLIO > ul li img { width: 100%; }
 
 .site:hover .bg { opacity: 1; }
@@ -58,14 +60,14 @@ section.on { display: block; }
 .text p { color: #999; font-size: .9em; line-height: 40px; }
 
 /*contact*/
-.cont { width: 700px; height: 300px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; border-radius: 4px; }
+.cont { width: 700px; height: 300px; background: #c5d5dd; margin: 0 auto; margin-top: 50px; margin-bottom: 70px; border-radius: 4px; box-shadow: 1px 2px 5px 0 rgba(0,0,0,.2); }
 .cont > p { padding: 55px 0 0 50px; font-size: 1.1em; }
 .cont > p > span { font-weight: bold; color: rgba(0,0,0, .7); }
 
 /*community*/
 .table { box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 .board { width: 1000px; margin: 0 auto; margin-top: 50px; margin-bottom: 70px;}
-.wr_btn { color: #333; float: right; font-size: 1em; font-weight: bold; margin-top: 10px; width: 80px; height: 40px; text-align: center; line-height: 40px; background: #3498db; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); cursor: pointer; }
+.wr_btn { color: #333; float: right; margin-left: 30px; font-size: 1em; font-weight: bold; margin-top: 20px; width: 80px; height: 40px; text-align: center; line-height: 40px; background: #3498db; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); cursor: pointer; }
 .wr_btn:hover { background: #ddd; }
 
 .table ul { border: 1px solid #ddd; height: 50px; line-height: 45px; }
@@ -85,7 +87,7 @@ section.on { display: block; }
 .date { font-size: 0.8em; }
 
 /*write*/
-.writing { width: 1000px; background: #fff; height: 400px; border: 1px solid #ddd; border-radius: 10px; margin: 0 auto; margin-top: 50px; margin-bottom: 70px;}
+.writing { width: 1000px; background: #fff; height: 400px; border: 1px solid #ddd; border-radius: 10px; margin: 0 auto; margin-top: 50px; margin-bottom: 100px;}
 .writing > form input { border: 1px solid #ddd; border-radius: 4px; }
 .writing > form input:nth-child(1) { width: 680px; height: 40px; margin: 10px }
 .writing > form input:nth-child(2) { width: 280px; height: 40px; margin: 10px 0px; }
