@@ -1,0 +1,26 @@
+/*all*/
+*{ margin: 0; padding: 0; box-sizing: border-box; transition: all .5s; font-family: "nanumgothic"; color: #333; }
+*:after { content: ""; display: block; clear: both; }
+
+/*font*/
+@font-face {
+	font-family: "nanumgothic";
+	src: "/font/NanumGothic-Regular.woff";
+}
+
+/*tag*/
+a { text-decoration: none; color: #3498db; }
+li { list-style: none; }
+span { display: inline-block; }
+button { border: 0; }
+.ABOUT,.PORTFOLIO,.CONTACT,.COMMUNITY,.WRITE { display: none; }
+
+/*html,body*/
+html,body { width: 100%; height: 100%; }
+
+/*wrap*/
+#wrap { width: 100%; margin: 0 auto; background: #eeeeee; }
+
+/*section*/
+.view { width: 1000px; height: 400px; margin: 0 auto; background: #fff; }
+.view div { display: inline-block; }

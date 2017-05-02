@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "./src/community/db.php";
 	$sql = "select * from community order by idx desc";
 	$se = $pdo->prepare($sql);
@@ -176,6 +176,11 @@
 					<a href="index.php" class="wr_btn">취소</a>
 				</form>
 			</div>
+
+		</section>
+
+		<section class="view">
+			<
 		</section>
 		<!-- footer -->
 		<footer id="footer">
