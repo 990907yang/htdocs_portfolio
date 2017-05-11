@@ -1,7 +1,7 @@
 <?php
     require_once 'inc/header.php';
     include "db.php";
-    $sql = "select * from board order by idx desc";
+    $sql = "select * from board";
     $se = $pdo->prepare($sql);
     $se->execute();
     $result = $se->fetchAll();

@@ -10,6 +10,8 @@
 <head>
 	<title>PORTFOLIO</title>
 	<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+	<script src="./src/js/jquery.js"></script>
+	<script src="./src/js/app.js"></script>
 </head>
 <body>
 <!-- wrap -->
@@ -171,7 +173,7 @@
 				<form action="./src/community/function/write.php" method="post">
 					<input type="text" name="title" placeholder="제목" required>
 					<input type="text" name="writer" placeholder="작성자" required>
-					<textarea type="textarea" class="textaa" name="text" placeholder="내용을 입력하세요." required></textarea>
+					<textarea class="textaa" name="text" placeholder="내용을 입력하세요." required></textarea>
 					<button class="wr_btn">글쓰기</button>
 					<a href="index.php" class="wr_btn">취소</a>
 				</form>
@@ -180,7 +182,6 @@
 		</section>
 
 		<section class="view">
-			<
 		</section>
 		<!-- footer -->
 		<footer id="footer">
@@ -188,6 +189,4 @@
 		</footer>
 	</div>
 </body>
-<script src="./src/js/jquery.js"></script>
-<script src="./src/js/app.js"></script>
 </html>
