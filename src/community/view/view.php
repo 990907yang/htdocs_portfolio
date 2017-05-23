@@ -1,42 +1,43 @@
 <?php 
-	session_start();
 	include "../db.php";
 	$sql = "select * from community where idx='{$_GET['idx']}'";
 	$se = $pdo->prepare($sql);
 	$se->execute();
 	$result = $se->fetchAll();
-
-	$count = 1;
-	if(isset($_SESSION['count'])){
-		$count = $_SESSION['count'];
-		$count++;
-	}
-	$_SESSION['count']=$count;
-
-	$co = "update community set count='{$_POST[$count]}'";
-	$go = $pdo->query($co);
- ?>
-<!DOCTYPE html>
-<html>
+?>
+<!doctype html>
+<html lang="ko">
 <head>
-	<title>view</title>
-	<link rel="stylesheet" type="text/css" href="../../css/co_style.css">
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-	<div id="wrap">
-		<section class="view">
-			<?php 
-				foreach( $result as $ro ){
-				$text = nl2br($ro['text']);
-			 ?>
-			 <span>제목 : </span><div class="title"><?=$ro['title']?></div><br>
-			 <span>글쓴이 : </span><div class="writer"><?=$ro['writer']?></div><br>
-			 <span>날짜 : </span><div class="date"><?=$ro['date']?></div><br>
-			 <span>조회수 : </span><div class="count"><?=$count?></div><br>
-			 <div class="text"><?=$text?></div>
-			 <?php 
-			 	}
-			  ?>
+	<div class="wrap">
+		<header id="header"></header>
+		<section id="section">
+			<h5>VIEW</h5>
+
+			<div class="board">
+				<div class="view">
+				<?php 
+					foreach( $result as $ro ){
+					$text = nl2br($ro['text']);
+				 ?>
+					<div class="idx"><?=$ro['idx']?></div>
+					<div class="title"><?=$ro['title']?></div>
+					<div class="writer"><?=$ro['writer']?></div>
+					<div class="count"><?=$ro['count']?></div>
+					<div class="text"><?=$text?></div>
+
+					<a href="../index.php" class="write_btn">목록</a>
+					<a href="./update.php" class="write_btn">수정</a>
+					<a href="./delete_ok.php" class="write_btn">삭제</a>
+					<?php 
+			 			}
+			  		?>
+				</div>
+			</div>
 		</section>
 	</div>
 </body>

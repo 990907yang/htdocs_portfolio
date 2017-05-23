@@ -1,4 +1,4 @@
-<?php
+<?php 
 	include "./src/community/db.php";
 	$sql = "select * from community order by idx desc";
 	$se = $pdo->prepare($sql);
@@ -52,7 +52,7 @@
 			</div>
 		</section>
 		<!-- portfolio -->
-		<section class="PORTFOLIO on">
+		<section class="PORTFOLIO">
 			<div class="sec_tit">
 				<h2>PORTFOLIO</h2>
 				<div class="underline"></div>
@@ -129,7 +129,7 @@
 			</div>
 		</section>
 
-		<section class="COMMUNITY">
+		<section class="COMMUNITY on">
 			<div class="sec_tit">
 				<h2>COMMUNITY</h2>
 				<div class="underline"></div>
@@ -141,7 +141,6 @@
 							<li>번호</li>
 							<li>제목</li>
 							<li>글쓴이</li>
-							<li>날짜</li>
 							<li>조회수</li>
 						</ul>
 					</div>
@@ -153,7 +152,6 @@
 							<li class="number"><?=$ro['idx']?></li>
 							<li class="title"><a href="./src/community/view/view.php?idx=<?=$ro['idx']?>"><?=$ro['title']?></a></li>
 							<li class="writer"><?=$ro['writer']?></li>
-							<li class="date"><?=$ro['date']?></li>
 							<li class="count"><?=$ro['count']?></li>
 						</ul>
 					<?php
@@ -170,18 +168,16 @@
 				<div class="underline"></div>
 			</div>
 			<div class="writing">
-				<form action="./src/community/function/write.php" method="post">
-					<input type="text" name="title" placeholder="제목" required>
-					<input type="text" name="writer" placeholder="작성자" required>
-					<textarea class="textaa" name="text" placeholder="내용을 입력하세요." required></textarea>
-					<button class="wr_btn">글쓰기</button>
+				<form action="./src/community/function/write.php" method="post" name="w_form">
+
+					<input type="text" class="title" name="title" placeholder="제목">
+					<input type="text" class="writer" name="writer" placeholder="작성자">
+					<textarea type="textarea" class="textaa" name="text" placeholder="내용을 입력하세요."></textarea>
+
+					<button class="wr_btn" id="w_bt">글쓰기</button>
 					<a href="index.php" class="wr_btn">취소</a>
 				</form>
 			</div>
-
-		</section>
-
-		<section class="view">
 		</section>
 		<!-- footer -->
 		<footer id="footer">
